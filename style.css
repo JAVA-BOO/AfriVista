@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Playfair Display", sans-serif;
+
+  /* font-family: Times, serif; */
+  /* font-optical-sizing: auto; */
+}
+/* nav */
+nav {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 30px;
+  padding: 30px;
+  width: 100vw;
+  margin-inline: auto;
+}
+
+.nav-container {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: space-between;
+  width: 100%;
+  /* gap: 50px; */
+  align-items: center;
+  padding-inline: 20px;
+}
+/* hero */
+
+.hero {
+  padding: 60px 30px 20px;
+  height: 100vh;
+  background-image: url(images/mobile-bg.png);
+  background-size: cover;
+  color: white;
+}
+.hero-container {
+  margin-top: 50px;
+}
+
+.hero-right h2 {
+  font-size: 25px;
+  /* letter-spacing: -1.1px; */
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.hero-right h1 {
+  font-size: 40px;
+  /* letter-spacing: -1.1px; */
+  font-weight: 600;
+  margin-bottom: 10px;
+  /* width: 250px; */
+}
+
+.hero-right p {
+  font-size: 16px;
+  /* letter-spacing: -1.1px; */
+  font-weight: normal;
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+.hero-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 25px;
+  background-color: #a76c34;
+  border: none;
+  border-radius: 25px;
+  gap: 5px;
+  color: aliceblue;
+  font-family: "Playfair Display", sans-serif;
+}
+/* about section */
+
+.about {
+  height: 120vh;
+  padding: 30px 40px 20px;
+  background-color: rgb(228, 209, 192);
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.about-left h1 {
+  color: #a76c34;
+  font-size: 32px;
+  font-weight: 300;
+}
+.explore h3 {
+  /* color: #a76c34; */
+  font-size: 24px;
+  font-weight: 300;
+  width: 250px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.afrivista {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.afrivista h3 {
+  color: #a76c34;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 0;
+}
+.about-left p {
+  font-size: 16px;
+  /* font-weight: 100; */
+  letter-spacing: 0.1px;
+  margin-top: 10px;
+  /* line-height: 1.5; */
+}
+.about-right {
+  position: relative;
+}
+.twobeach {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+}
+/* tour section */
+.tour {
+  height: 120vh;
+  background-image: url(./images/framer-bg.png);
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  padding: 30px 40px 20px;
+}
+.tour-heading {
+  color: white;
+  font-size: 36px;
+  font-weight: 300;
+  text-align: center;
+}
+.tour-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.packages-card {
+  background-color: rgba(64, 45, 26, 0.5);
+  width: 246px;
+  padding: 20px 20px 30px;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(167, 108, 52);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.packages-card h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.packages-card p {
+  font-size: 12px;
+  margin-top: 10px;
+}
