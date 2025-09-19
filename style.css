@@ -7,7 +7,7 @@
 body {
   position: relative;
   font-family: "Playfair Display", sans-serif;
-  background-color: #3a2612;
+  background-color: #f2e9e1;
   margin-block: 0;
   padding-block: 0;
 
@@ -422,6 +422,64 @@ nav {
   background-image: url(./images/gallery/Frame\ last.png);
   /* linear-gradient(rgba(167, 108, 52, 0.6)),
     rgba(167, 108, 52, 0.6) */
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 20px;
+}
+
+.infos-container {
+  padding: 30px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info-cards p {
+  font-size: 10px;
+  color: #3a2612;
+}
+
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.quick-links h1 {
+  font-size: 20px;
+  color: #3a2612;
+}
+.quick-links a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #3a2612;
+}
+
+.quick-links input {
+  padding: 10px 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: transparent;
+  border: 1px solid #3a2612;
+  width: 100%;
+  /* width: 200px; */
+}
+
+.quick-links input::placeholder {
+  font-size: 16px;
+  font-family: "Playfair Display", sans-serif;
+}
+.ded {
+  display: flex;
+}
+.beb {
+  background-color: #a76c34;
+  padding: 10px 20px;
+  border: 1px solid #3a2612;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
