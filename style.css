@@ -324,3 +324,101 @@ nav {
   grid-column: span 2;
   grid-row: span 2;
 }
+/*  testimonial section */
+.testimonial {
+  height: 70vh;
+  padding: 30px;
+  background-image: url(./images/gallery/Frame\ mobile.png);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  color: white;
+}
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimonial h1 {
+  text-align: center;
+}
+.big-circle {
+  width: 80px;
+  height: 80px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+}
+
+.testimonial p {
+  text-align: center;
+  font-size: 28px;
+}
+/* contact */
+.contact {
+  height: 80vh;
+  background-color: rgb(228, 209, 192);
+}
+.contact-container {
+  padding: 20px 30px;
+  /* display: flex; */
+}
+
+.contact-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #a76c34;
+  font-weight: 500;
+}
+.contact-left {
+  display: none;
+}
+.contact-right {
+  background-color: #f2e9e1;
+  padding: 20px;
+  border-radius: 10px;
+}
+.tags {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 10px 0;
+  gap: 5px;
+}
+.contact-right label {
+  font-size: 12px;
+  color: #3a2612;
+}
+.contact-right input {
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid #b7bfc7;
+}
+
+.contact-right input::placeholder {
+  color: #3a2612;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: lighter;
+  font-size: 16;
+}
+
+.contact-right h2 {
+  font-size: 14px;
+  color: #3a2612;
+  margin-top: 20px;
+}
+.contact-right a {
+  text-decoration: none;
+  color: rgba(167, 108, 52);
+}
+
+/* infos */
+
+.infos {
+  height: 150vh;
+  background-image: url(./images/gallery/Frame\ last.png);
+  /* linear-gradient(rgba(167, 108, 52, 0.6)),
+    rgba(167, 108, 52, 0.6) */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
