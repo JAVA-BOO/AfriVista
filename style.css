@@ -1004,3 +1004,19 @@ nav {
     width: 1280px;
   }
 }
+
+@media (orientation: landscape) and (min-height: 200px) and (max-height: 600px) {
+  .hero {
+    height: max-content;
+    padding-bottom: 30px;
+  }
+  .about-right {
+    display: none;
+  }
+}
+
+@media (min-height: 150px) and (max-height: 200px) and (min-width: 150px) and (max-width: 200px) {
+  .hero-container {
+    scale: 0.9;
+  }
+}
