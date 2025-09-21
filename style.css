@@ -10,6 +10,7 @@ body {
   background-color: #f2e9e1;
   margin-block: 0;
   padding-block: 0;
+  overflow-x: hidden;
 
   /* font-family: Times, serif; */
   /* font-optical-sizing: auto; */
@@ -194,6 +195,11 @@ nav {
   padding: 30px;
   background-color: rgb(228, 209, 192);
 }
+.destination-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .destination-container h1 {
   color: #a76c34;
   font-weight: 500;
@@ -216,9 +222,11 @@ nav {
   align-items: center;
   width: 151px;
   padding: 10px 20px;
-  background-color: #a76c34;
+  background-color: rgb(228, 209, 192);
+  border: 1px solid rgb(167, 108, 52);
+  color: #a76c34;
+
   border-radius: 25px;
-  color: aliceblue;
   font-size: 14px;
   font-family: "Playfair Display", sans-serif;
 }
@@ -230,9 +238,8 @@ nav {
   display: none;
 }
 .destination-btn input:checked + span {
-  background-color: rgb(228, 209, 192);
-  border: 1px solid rgb(167, 108, 52);
-  color: #a76c34;
+  background-color: #a76c34;
+  color: aliceblue;
 }
 
 /* destination cards */
@@ -482,4 +489,202 @@ nav {
   border: 1px solid #3a2612;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+/* TABLET MEDIA QUERY */
+
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-container {
+    width: 768px;
+    background-color: rgba(20, 25, 25, 0.2);
+    backdrop-filter: blur(8px);
+    height: 49px;
+    border-radius: 70px;
+    padding: 20px 30px;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    background-image: url(./images/Rectangle\ 4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  }
+  .hero-container {
+    width: 768px;
+  }
+
+  .hero-right h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    width: 350px;
+    line-height: 1.5;
+  }
+  .hero-right h2 {
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .hero-right p {
+    width: 700px;
+    text-align: justify;
+    line-height: 2;
+  }
+
+  /* about page */
+  .about {
+    height: 100vh;
+  }
+  .about-container {
+    padding-top: 40px;
+  }
+  .about-left h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .explore {
+    display: flex;
+    align-items: center;
+  }
+  .explore h3 {
+    width: auto;
+    flex: 0 0 auto;
+  }
+  .afrivista {
+    align-items: end;
+    flex: 0 0 auto;
+  }
+  .about-left p {
+    width: 650px;
+    text-align: justify;
+    line-height: 1.5;
+  }
+  .manHat {
+    width: 331px;
+    height: 365px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-80%);
+  }
+  .twobeach {
+    width: 351px;
+    height: 290px;
+    top: 220px;
+    left: 50%;
+    transform: translate(-30%);
+  }
+
+  /* tour section */
+  .tour {
+    height: 105vh;
+    background-image: url(./images/framer\ big.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .tour-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 30px;
+  }
+  .tour-cards {
+    gap: 30px;
+  }
+  .packages-card {
+    flex: 0 0 auto;
+  }
+
+  /* destination */
+  .destination {
+    height: 60vh;
+  }
+  .destination-cards {
+    gap: 30px;
+  }
+  .destination-btn label:nth-child(3) {
+    display: block;
+  }
+
+  .desti-cards:nth-child(4) {
+    display: block;
+  }
+  /* gallery */
+  .gallery {
+    height: 55vh;
+  }
+  .gallery-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .gallery-images {
+    display: grid;
+    grid-template-columns: repeat(7, 80px);
+    grid-auto-rows: 75px;
+    gap: 15px;
+  }
+  .gallery-images img {
+    border-radius: 8px;
+  }
+  /* testimonial section */
+
+  .testimonial {
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+    background-image: none;
+  }
+
+  .testimonial::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(images/gallery/Frame\ 37.png);
+    filter: blur(10px);
+    transform: scale(1.1);
+    background-size: cover;
+    z-index: -1;
+  }
+  .big-circle {
+    width: 120px;
+    height: 120px;
+  }
+  .testimonial-container {
+    gap: 50px;
+    margin-top: 40px;
+  }
+
+  /* contact */
+  .contact {
+    height: 60vh;
+  }
+  .contact-container {
+    padding-top: 40px;
+  }
+  /* info */
+
+  .infos {
+    height: 100vh;
+  }
+
+  .infos-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 150px;
+    justify-content: space-around;
+  }
+
+  .quick-links {
+    flex: 0 0 auto;
+  }
+  .quick-links:nth-child(5) {
+    width: 100%;
+  }
 }
